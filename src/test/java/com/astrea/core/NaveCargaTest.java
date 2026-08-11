@@ -22,7 +22,7 @@ public class NaveCargaTest {
     public void testViajePesado() throws AstreaException {
         NaveCarga nave = new NaveCarga("C-101", "Mula Pesada", 100.0, 500.0, 1000.0);
         nave.cargar(600.0); // > 50% de 1000 (500)
-        
+        *
         nave.viajar(10.0); // Consumo: 3.0 * 10 = 30.0
         
         assertEquals(70.0, nave.getCombustible(), 0.001);
